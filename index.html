@@ -19,6 +19,7 @@
         font-size: 2rem;
         color: white;
         background: #202731;
+        overflow-x: hidden;
       }
 
       section {
@@ -42,6 +43,37 @@
       .dark {
         background: #0f0f10;
       }
+
+      .curve {
+        position: absolute;
+        height: 250px;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+      }
+
+      .curve::before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        transform: translate(85.18%, 60%);
+        background-color: #dd3f31;
+      }
+
+      .curve::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #0f0f10;
+        transform: translate(-4%, 40%);
+        z-index: 1;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +85,7 @@
         sapiente perspiciatis aliquid pariatur nesciunt at illo voluptatibus
         nobis laboriosam maiores eius!
       </p>
+      <div class="curve"></div>
     </section>
     <section class="red">
       <h1>Nice Curves</h1>
@@ -71,7 +104,7 @@
         veritatis sed voluptate?
       </p>
     </section>
-    <section class="dark">
+    <section class="bubble">
       <h1>Nice Curves</h1>
       <p>
         Praesentium sed tempora error totam voluptatum repellendus consequatur
@@ -80,7 +113,7 @@
         magni autem blanditiis optio?
       </p>
     </section>
-    <section class="pink">
+    <section class="dark">
       <h1>Nice Curves</h1>
       <p>
         Eos aut nih1l, odio quam vel, nesciunt id, dignissimos tempore et
@@ -88,7 +121,7 @@
         odio nemo officiis eos obcaecati laborum recusandae vero qui.
       </p>
     </section>
-    <section>
+    <section class="blue">
       <h1>Nice Curves</h1>
       <p>
         Soluta quae cupiditate natus facere fugit eaque placeat, ratione fugiat
